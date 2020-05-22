@@ -1,7 +1,3 @@
-.idea
+!.gitignore
 
-.settings
-.buildpath
-.project
-
-a.html
+.*
