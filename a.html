@@ -1,63 +1,23 @@
-<?php
-header('Cache-Control: no-store, no-cache, must-revalidate');
-header('Expires: 0');
-//phpinfo()
-?>
 <!doctype html>
-<html lang="ko">
+<html lang="ko" xmlns:btn="http://www.w3.org/1999/html">
 <head>
 	<title>Document</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="/js/jquery-3.5.1.min.js"></script>
-
 	<style>
-		#msg_ios_input_patch {position: absolute; left: 99999px;}
+		.bt {background: silver; border: solid 1px #eee; font-size: 12px; padding: 1em; padding-top: 0; padding-bottom: 0; text-decoration: none;
+			color: #222; display: inline-block; height: 30px; line-height: 30px; box-sizing: border-box;
+			vertical-align: middle;
+		}
 	</style>
 </head>
 <body>
 
-<input type="text" id="msg">
-<input type="text" id="msg_ios_input_patch">
 
-<div>
-	<button id="btn" type="button">전송</button>
-	<button id="show" type="button">show</button>
-</div>
+<iframe src="https://www.youtube.com/embed/nBF9tT787B0?controls=0"></iframe>
 
-
-<script>
-	$('#btn').on('click', function () {
-		//$('#msg').val($('#msg').val() + 1);
-		$('#msg').val('');
-		
-		
-		
-		
-		/*setTimeout(function () {
-			$('#msg').focus();
-		}, 1000);*/
-
-		$('#msg_ios_input_patch').focus();
-		$('#msg').focus();
-		
-		
-		return false;
-	});
-
-
-	/*$('#show').on('click', function () {
-		alert($('#msg').val());
-	});*/
-
-
-	$('#msg').on('keyup', function () {
-		$('span').html($(this).val());
-	});
-</script>
-<div>
-	<span></span>
-</div>
 </body>
 </html>
+
