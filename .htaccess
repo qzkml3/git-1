@@ -1,0 +1,6 @@
+<IfModule mod_headers.c>
+    <FilesMatch ".(css|jpg|jpeg|gif|png|ico|swf|flv|cab|bmp|svg)$">
+        Header set Cache-Control "max-age=36000, public, must-revalidate"
+    </FilesMatch>
+    FileETag MTime Size
+</IfModule>
